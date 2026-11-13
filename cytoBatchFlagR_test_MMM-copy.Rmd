@@ -357,7 +357,7 @@ For the arcsinh transformation, you must set a cofactor. Cofactors commonly used
 transformation_class <- "arcsinh" 
 
 # Set a cofactor for arcsinh transformation
-cf <- 6000
+cf <- 3000
 
 # Transform
 ffdf <- create_transformed_dataframe_function(transformation_class = transformation_class, 
@@ -465,6 +465,8 @@ First, the tool generates automated marker thresholds for each marker in the dat
 # min_peak_height_frac: Minimum relative peak height as a fraction of max peak
 # For unimodal thresholds, shoulder_frac can be changed
 # shoulder_frac: Fraction of peak density height used to define the shoulder
+
+
 auto_cutoffs <- data.frame(automated_threshold_DF(df = ffdf, 
                                                   markers = markers_1,
                                                   control_list = controls, 
@@ -956,12 +958,16 @@ First, choose the markers you want to include for clustering. That can either be
 
 ```{r Select markers to use for clustering, close the app to save list}
 
-# Select all 'phenotype/lineage' markers for clustering
-pheno_markers <- as.character(marker_tbl[which(marker_tbl$status=="phenotype"),"PnS"])
+# # Select all 'phenotype/lineage' markers for clustering
+# pheno_markers <- as.character(marker_tbl[which(marker_tbl$status=="phenotype"),"PnS"])
+
+
+
+pheno_markers <- c("CD3","CD45RA","CD69","CD25","CD56","CD19","CD95","CD4","CD8","CD103","CD16", "CD39", "PD1","TIGIT","CCR4","CCR6", "FOXP3","HLA.DR")
 
 # Alternatively, select the markers used for clustering in this pop-up window
 # Click 'Done' once markers are chosen
-# pheno_markers <- selectMarkerList(marker_tbl, column_name = "PnS")
+pheno_markers <- selectMarkerList(marker_tbl, column_name = "PnS")
 
 ```
 
@@ -974,7 +980,7 @@ To make the cells that are subsampled reproducible, set the seed to a number. If
 ```{r Select parameters for clustering assessment}
 
 # Number of cells to downsample
-num <- 50000
+num <- 15000
 
 # Number of clusters to make in FlowSOM
 meta_cluster_num <- 8
