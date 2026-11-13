@@ -969,7 +969,7 @@ pheno_markers <- c("CD3","CD45RA","CD69","CD25","CD56","CD19","CD95","CD4","CD8"
 
 # Alternatively, select the markers used for clustering in this pop-up window
 # Click 'Done' once markers are chosen
-pheno_markers <- selectMarkerList(marker_tbl, column_name = "PnS")
+#pheno_markers <- selectMarkerList(marker_tbl, column_name = "PnS")
 
 ```
 
