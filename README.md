@@ -1,14 +1,4 @@
 
----
-title: "CytoBatchFlagR – Eswar26 Dataset"
-author: "MM"
-date: "`r Sys.Date()`"
-output:
-  html_document:
-    toc: true
-    toc_depth: 3
-    number_sections: true
----
 
 # 1. General Overview
 
