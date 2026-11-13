@@ -45,39 +45,38 @@ The current functions and parameters in this file are set to run with the exampl
 
 ### Installing and Loading Dependencies ###
 
-Before running this tool, please ensure that all required R packages are installed and available in your environment.
+<!-- Before running this tool, please ensure that all required R packages are installed and available in your environment. -->
 
-```{r Install required CRAN packages}
+<!-- ```{r Install required CRAN packages} -->
 
-# Load this function to check for missing packages and install them
-source("package_installer.R")
+<!-- # Load this function to check for missing packages and install them -->
+<!-- source("package_installer.R") -->
 
-# Packages needed
-requiredPackages <- c("dplyr","scales","tidyr","reshape2","readr",
-                    "matrixStats","readxl","ggplot2","ggpubr",
-                    "ggridges","MASS","RColorBrewer","cowplot",
-                    "ggrepel","emdist","circlize","gridExtra","stats",
-                    "LaplacesDemon","pheatmap","umap","progress","crayon",
-                    "patchwork","ggpmisc","viridis","tidyverse","shiny",
-                    "shinyjs","DT","bslib","shinyjs","cluster","rstudioapi",
-                    "grid","shinycssloaders","shinyWidgets")
-# Install
-package_installer(requiredPackages)
+<!-- # Packages needed -->
+<!-- requiredPackages <- c("dplyr","scales","tidyr","reshape2","readr", -->
+<!--                     "matrixStats","readxl","ggplot2","ggpubr", -->
+<!--                     "ggridges","MASS","RColorBrewer","cowplot", -->
+<!--                     "ggrepel","emdist","circlize","gridExtra","stats", -->
+<!--                     "LaplacesDemon","pheatmap","umap","progress","crayon", -->
+<!--                     "patchwork","ggpmisc","viridis","tidyverse","shiny", -->
+<!--                     "shinyjs","DT","bslib","shinyjs","cluster","rstudioapi", -->
+<!--                     "grid","shinycssloaders","shinyWidgets") -->
+<!-- # Install -->
+<!-- package_installer(requiredPackages) -->
 
-# Check if the packages can be loaded
-lapply(requiredPackages, require, character.only = TRUE)
+<!-- # Check if the packages can be loaded -->
+<!-- lapply(requiredPackages, require, character.only = TRUE) -->
 
-```
+<!-- ``` -->
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+<!-- ```{r setup, include=FALSE} -->
+<!-- knitr::opts_chunk$set(echo = TRUE) -->
+<!-- ``` -->
 
 
 #### Set dir 
 
 ```{r}
-
 packagePath<-paste0(.libPaths(),"/CytoBatchFlagR/R") # TO CHANGE 
 workDir<-"/mnt/md0/R_D/CytoBatchFlagR/Eswar26" # TO CHANGE
 ```
