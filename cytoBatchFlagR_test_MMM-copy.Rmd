@@ -189,7 +189,7 @@ if (length(fcs_files) == 0) {
   stop("No FCS files found in data.dir: ", data.dir)
 }
 
-message("Found ", length(fcs_files), " FCS files.")fcs
+message("Found ", length(fcs_files), " FCS files.")
 
 # 1.2 - Extract marker panel from each FCS file
 get_panel <- function(f) {
