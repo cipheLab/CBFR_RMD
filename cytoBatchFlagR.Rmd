@@ -346,7 +346,7 @@ dir.create(output.dir, recursive = TRUE, showWarnings = FALSE)
 Here, you should transform the data if you haven't already done so. This tool contains a function for the data to be transformed with an arcsinh function.
 
 For the arcsinh transformation, you must set a cofactor. Cofactors commonly used in the field are:
-  - Mass Cytometry (CyTOF) datasets: 5 
+- Mass Cytometry (CyTOF) datasets: 5 
 - Conventional Flow Cytometry datasets: 150
 - Spectral Flow Cytometry datasets: 6000
 
@@ -418,21 +418,21 @@ generate_MDS_plot(df = ffdf,
                   axis_size = 24, 
                   width = 12, 
                   height = 12)
-
-# Plot 3: UMAP of controls annotated by batch colors
-# Axis size, plot width, and plot height are customizable
-generate_UMAP(df = ffdf, 
-              batch_colm = "batch", 
-              control_colm = "control", 
-              marker_list = markers, 
-              batch_list = batches, 
-              control_list = controls, 
-              sample_ids = sample_ids, 
-              batch_colours = batchColours, 
-              output_dir = output.dir, 
-              axis_size = 24, 
-              width = 12, 
-              height = 12)
+# 
+# # Plot 3: UMAP of controls annotated by batch colors
+# # Axis size, plot width, and plot height are customizable
+# generate_UMAP(df = ffdf, 
+#               batch_colm = "batch", 
+#               control_colm = "control", 
+#               marker_list = markers, 
+#               batch_list = batches, 
+#               control_list = controls, 
+#               sample_ids = sample_ids, 
+#               batch_colours = batchColours, 
+#               output_dir = output.dir, 
+#               axis_size = 24, 
+#               width = 12, 
+#               height = 12)
 
 ```
 
