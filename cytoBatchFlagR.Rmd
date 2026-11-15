@@ -78,7 +78,7 @@ The current functions and parameters in this file are set to run with the exampl
 
 ```{r}
 packagePath<-paste0(.libPaths()[1],"/CytoBatchFlagR/R") # TO CHANGE 
-workDir<-"C:\\Users\\Admin\\Documents\\eswar26_prep_fcs\\eswar26_prep_fcs\\B08_tcs4_CD45+CD14-_sampled.fcs" # TO CHANGE
+workDir<-"C:\\Users\\Admin\\Documents\\eswar26_prep_fcs\\eswar26_prep_fcs\\" # TO CHANGE
 ```
 
 ```{r setup, include=FALSE}
