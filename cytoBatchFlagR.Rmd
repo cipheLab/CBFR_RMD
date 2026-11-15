@@ -571,28 +571,28 @@ editMarkerTable(auto_cutoffs)
 
 If you want to further examine the new automated cutoffs, you can optionally choose to re-plot marker expression densities across controls and batches with the new automated cutoffs.
 
-```{r OPTIONAL: Re-plot marker expression densities with new marker cutoff values}
+<!-- ```{r OPTIONAL: Re-plot marker expression densities with new marker cutoff values} -->
 
-# Axis size, plot width, and plot height are customizable
-write_density_plot_per_marker(marker_list = markers_1, 
-                              df = ffdf_sampled, 
-                              batch_list = batches, 
-                              control_list = controls, 
-                              auto_cutoffs = updated_auto_cutoffs, 
-                              batch_colm = "batch", 
-                              control_colm = "control", 
-                              output_dir = output.dir, 
-                              wd = 11, 
-                              ht = 10, 
-                              axis_size = 14, 
-                              file_name = "marker_expression_densities_updated_cutoffs", 
-                              ref_subsampling = "yes", 
-                              samps = sample_ids, 
-                              ref_subsampling_size = 20000,
-                              seed = 450, 
-                              batches_per_plot = NULL)
+<!-- # Axis size, plot width, and plot height are customizable -->
+<!-- write_density_plot_per_marker(marker_list = markers_1,  -->
+<!--                               df = ffdf_sampled,  -->
+<!--                               batch_list = batches,  -->
+<!--                               control_list = controls,  -->
+<!--                               auto_cutoffs = updated_auto_cutoffs,  -->
+<!--                               batch_colm = "batch",  -->
+<!--                               control_colm = "control",  -->
+<!--                               output_dir = output.dir,  -->
+<!--                               wd = 11,  -->
+<!--                               ht = 10,  -->
+<!--                               axis_size = 14,  -->
+<!--                               file_name = "marker_expression_densities_updated_cutoffs",  -->
+<!--                               ref_subsampling = "yes",  -->
+<!--                               samps = sample_ids,  -->
+<!--                               ref_subsampling_size = 20000, -->
+<!--                               seed = 450,  -->
+<!--                               batches_per_plot = NULL) -->
 
-```
+<!-- ``` -->
 
 <!-- Next, you can generate biaxial dot plots against a reference marker. -->
 
