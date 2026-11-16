@@ -253,18 +253,18 @@ if (!is.null(params$umap_max_cell) && params$umap_max_cell > 1000) {
   ffdf_sampled <- ffdf
 }
 
-generate_UMAP(df = ffdf_sampled, 
-              batch_colm = "batch", 
-              control_colm = "control", 
-              marker_list = markers, 
-              batch_list = batches, 
-              control_list = controls, 
-              sample_ids = sample_ids, 
-              batch_colours = batchColours, 
-              output_dir = output.dir, 
-              axis_size = 24, 
-              width = 12, 
-              height = 12)
+#generate_UMAP(df = ffdf_sampled, 
+#              batch_colm = "batch", 
+#              control_colm = "control", 
+#              marker_list = markers, 
+#              batch_list = batches, 
+#              control_list = controls, 
+#              sample_ids = sample_ids, 
+#              batch_colours = batchColours, 
+#              output_dir = output.dir, 
+#              axis_size = 24, 
+#              width = 12, 
+#              height = 12)
 
 ```
 
