@@ -1016,21 +1016,21 @@ Additionally, min_batch_effect can be used to filter out batch-control combinati
 ```{r Ranked, summarized heatmap of all assessment metrics}
 
 # Large heatmap with all the flags
-generate_ranked_flagged_hmap_all(emd_df = emdf,
-                                 iqr_df = iqrdf,
-                                 cluster_df = filter_df, 
-                                 cell_cluster_vector = cell_cluster_vector,
-                                 set_threshold1 = set_threshold1,
-                                 set_threshold2 = set_threshold2,
-                                 batch_list = batches, 
-                                 controls = controls, 
-                                 markers = markers_1,
-                                 batch_cols = batchColours, 
-                                 output_dir = output.dir,
-                                 markers_per_plot = NULL,
-                                 batches_per_plot = NULL,
-                                 min_batch_effect = 0,
-                                 min_marker_effect = 0) 
+#generate_ranked_flagged_hmap_all(emd_df = emdf,
+#                                 iqr_df = iqrdf,
+#                                 cluster_df = filter_df, 
+#                                 cell_cluster_vector = cell_cluster_vector,
+#                                set_threshold1 = set_threshold1,
+#                                 set_threshold2 = set_threshold2,
+#                                 batch_list = batches, 
+#                                 controls = controls, 
+#                                 markers = markers_1,
+#                                 batch_cols = batchColours, 
+#                                 output_dir = output.dir,
+#                                 markers_per_plot = NULL,
+#                                 batches_per_plot = NULL,
+#                                 min_batch_effect = 0,
+#                                 min_marker_effect = 0) 
 
 ```
 
