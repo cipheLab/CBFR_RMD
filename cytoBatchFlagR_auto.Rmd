@@ -987,16 +987,16 @@ Set num to the number of cells to downsample to per clusters. If a cluster has <
 ```{r UMAP of clusters annotated by batch colours}
 
 # Axis size, plot width, plot height, seed, and number of cells (num) are customizable
-generate_cluster_UMAP(df = filter_df, 
-                      marker_list = pheno_markers, 
-                      batch_list = batches, 
-                      batch_colours = batchColours, 
-                      seed = 450,
-                      num = 2000,
-                      output_dir = output.dir, 
-                      axis_size = 24, 
-                      width = 12, 
-                      height = 12)
+#generate_cluster_UMAP(df = filter_df, 
+#                      marker_list = pheno_markers, 
+#                      batch_list = batches, 
+#                     batch_colours = batchColours, 
+#                      seed = 450,
+#                      num = 2000,
+#                      output_dir = output.dir, 
+#                      axis_size = 24, 
+#                      width = 12, 
+#                      height = 12)
 ```
 
 ### Step 6: Summary of Results (for Steps 2, 3, and 5) ###
